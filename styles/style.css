@@ -13,8 +13,23 @@ body{
   color:rgb(0, 0, 0);
    }
    
-/* @font-face {
+ @font-face {
     font-family: "EBGaramond";
-    src: url("font/EB_Garamond");
-    
-} */
+    src: url("font/EB_Garamond");  
+} 
+
+ /* text des cartes */
+ 
+ .carte {
+    width: 280px;
+ }
+ /* texte des cartes descriptif */
+ .carte-description{
+    font-family: ebgaramond;
+    font-size: 18px;
+    height: 250px;
+ }
+ .formulaire {
+    background-color: rgba(0, 0, 0, 0.026);
+    border-radius: 10px;
+ }
