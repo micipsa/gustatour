@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>gustatour</title>
     <link rel="stylesheet" href="styles/style.css">
+    <!-- logo de la page -->
+    <link rel="icon" type="image/png" href="images/logohead.jpg">
     <!-- boostrap call -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
@@ -29,7 +31,7 @@
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <!--  -->
+                <!--  nav bar-->
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
@@ -110,11 +112,11 @@
     </header>
 
     <main>
-        <!-- destinations cards -->
+        <!-- section pour les cartes de destinations  -->
         <section id="destinations" class="pt-5">
             <div class="container d-flex justify-content-evenly">
-
-                <div class="row">
+<div class="row">
+                    <!-- carte pour l'italie -->
                     <div class="col p-5 text-center">
                         <div class="card" style="width: 280px;">
                             <img src="images/carditalie.png" class="card-img-top" alt="italia">
@@ -128,6 +130,7 @@
                             </div>
                         </div>
                     </div>
+                    <!-- carte pour le japon -->
                     <div class="col p-5 text-center">
                         <div class="card" style="width: 280px;">
                             <img src="images/cardjapan.png" class="card-img-top" alt="japan">
@@ -141,6 +144,7 @@
                             </div>
                         </div>
                     </div>
+                    <!-- carte de mexico -->
                     <div class="col p-5 text-center">
                         <div class="card" style="width: 280px;">
                             <img src="images/cardmexico.png" class="card-img-top" alt="mexico">
@@ -157,7 +161,8 @@
                 </div>
             </div>
         </section>
-        <H1 class="text-center pt-5 ">NOS PACK </H1>
+        <!-- titre pour les packs promotionnels -->
+        <H1 class="text-center pt-5 text-decoration-underline">NOS PACK </H1>
 
         <!-- accordeont of destination -->
         <div class="container">
@@ -236,7 +241,7 @@
                         </div>
                     </div>
                 </div>
-<h1 class="text-center pt-5 text-decoration-underline">CONTACTEZ NOUS</h1>
+<h1 class="text-center pt-5 text-decoration-underline mt-5">CONTACTEZ NOUS</h1>
 <!-- formulaire de contact -->
 <div class="container text-center pb-5 mt-5 ">
   <div class="row">
@@ -279,10 +284,17 @@
 
     </main>
     <!-- footer du site -->
-    <footer>
+    
+<footer class="bg-dark text-light text-center pt-3 pb-3 mt-5">
+  <div class="container">
+    <p class="mb-1">&copy; 2025 Gustatour. Tous droits réservés.</p>
+    <p class="mb-1">
+      Site conçu pour une démonstration d'un projet avec bootstrap. Mentions légales et politique de confidentialité non disponibles.
+    </p>
+  </div>
+</footer>
 
-
-    </footer>
+   
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
