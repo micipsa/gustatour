@@ -13,3 +13,8 @@ body{
   color:rgb(0, 0, 0);
    }
    
+@font-face {
+    font-family: "EBGaramond";
+    src: url("font/EB_Garamond");
+    font-weight:500;
+}
