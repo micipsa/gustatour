@@ -17,48 +17,45 @@
 
 <body>
     <header>
+
         <!-- barre de navigation -->
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
+
                 <!-- logo du site sur la nav -->
                 <a id="logo" class="navbar-brand" href="#">
                     <img src="images/gustatour.png" alt="logo" class=" rounded-cicle " width=80px;></a>
 
                 <!-- humburger bar -->
-
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+
                 <!--  nav bar-->
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#destinations">Destination</a>
                         </li>
-                        <!-- <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Dropdown
-                            </a> -->
                         <li class="nav-item">
                             <a class="nav-link" href="#tours">Tours</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#contact">Contact</a>
                         </li>
-
-
+                    </ul>
                 </div>
             </div>
         </nav>
-        <!-- HERO SECTION -->
-       
-        <div id="carouselExampleCaptions" class="carousel slide d-flex flex-column">
+
+        <!-- Carous HERO SECTION -->
+        <div id="carouselExampleCaptions" class="carousel slide d-flex flex-column carous col-sx-4">
+
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
                     aria-current="true" aria-label="Slide 1"></button>
@@ -68,36 +65,43 @@
                     aria-label="Slide 3"></button>
             </div>
 
+            <!-- TOUTES les slides doivent être dans .carousel-inner -->
             <div class="carousel-inner d-none d-md-block">
-                <div class="carousel-item active d-flex align-items-center justify-content-center">
-                    <img src="images/italiaheronew.png" class="d-block w-100" alt="italie">
-                    <div class="carousel-caption d-flex align-items-center justify-content-center d-md-block mb">
 
+                <!-- italia hero image -->
+                <div class="carousel-item active d-flex align-items-center justify-content-center carousitem">
+                    <img src="images/italia.png" class="d-block w-100" alt="italie">
+                    <div
+                        class="carousel-caption d-flex align-items-center justify-content-center d-md-block mb caroustext">
                         <h1 class="text-italia fs-1 p-2">ITALIA PASTA TOUR</h1>
-
                         <p class="fs-1 p-1 text-dark">Vivez les saveurs italiennes</p>
                         <button type="button" class="btn btn-danger mb-3">en savoir plus</button>
                     </div>
                 </div>
-                <div class="carousel-item">
-                    <img src="images/japanheronew.png" class="d-block w-100" alt="japan">
-                    <div class="carousel-caption d-none d-md-block">
 
-                        <h1 class="text-japan fs-1 p-1 ">JAPAN TOUR</h1>
-                        <p class="fs-1 p-1 text-dark">Goutez à la spiritualité"</p>
+                <!-- japan hero image -->
+                <div class="carousel-item carousitem">
+                    <img src="images/japan.png" class="d-block w-100" alt="japan">
+                    <div class="carousel-caption d-none d-md-block caroustext">
+                        <h1 class="text-japan fs-1 p-1">JAPAN TOUR</h1>
+                        <p class="fs-1 p-1 text-dark">Goutez à la spiritualité</p>
                         <button type="button" class="btn btn-danger mb-3">en savoir plus</button>
                     </div>
                 </div>
-                <div class="carousel-item" p-3>
-                    <img src="images/mexicoheronew.png" class="d-block w-100" alt="mexique">
-                    <div class="carousel-caption d-none d-md-block ">
 
-                        <H1 class="text-cream fs-1 p-1">MEXICO TOUR</h1>
+                <!-- mexico hero image -->
+                <div class="carousel-item carousitem">
+                    <img src="images/mexico.png" class="d-block w-100" alt="mexique">
+                    <div class="carousel-caption d-none d-md-block caroustext">
+                        <h1 class="text-cream fs-1 p-1">MEXICO TOUR</h1>
                         <p class="text-cream fs-1 p-1 text-dark">Le pays de la passion gastronomique</p>
                         <button type="button" class="btn btn-danger mb-3">en savoir plus</button>
                     </div>
                 </div>
+
             </div>
+
+            <!-- boutons direction du carrousel -->
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
                 data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -108,19 +112,24 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
+
         </div>
+
     </header>
 
     <main>
+        <H1 class="m-5 ">Nos Destinations</H1>
         <!-- section pour les cartes de destinations  -->
-        <section id="destinations" class="pt-5">
-            <div class="container d-flex justify-content-evenly">
-                <div class="row">
+        <section id="destinations" class="pt-5 text-centre">
+            <div class="container text-center ">
+                <div class="row text-center ">
+
                     <!-- carte pour l'italie -->
-                    <div class="col p-5 text-center">
-                        <div class="card carte">
+                    <div class="col  text-center mx-auto px-auto">
+                        <div class="card carte col-12 col-md-6 col-lg-4 w-100 ">
                             <img src="images/carditalie.png" class="card-img-top" alt="italia">
                             <div class="card-body">
+
                                 <h5 class="card-title">ITALIA TOUR</h5>
                                 <p class="card-text carte-description">Découvrez l’Italie à travers ses saveurs
                                     authentiques : pâtes
@@ -132,8 +141,8 @@
                         </div>
                     </div>
                     <!-- carte pour le japon -->
-                    <div class="col p-5 text-center">
-                        <div class="card carte">
+                    <div class="col  text-center">
+                        <div class="card carte col-12 col-md-6 col-lg-4  w-100 ">
                             <img src="images/cardjapan.png" class="card-img-top" alt="japan">
                             <div class="card-body">
                                 <h5 class="card-title">JAPAN TOUR</h5>
@@ -147,8 +156,8 @@
                         </div>
                     </div>
                     <!-- carte de mexico -->
-                    <div class="col p-5 text-center">
-                        <div class="card carte">
+                    <div class="col  text-center">
+                        <div class="card carte col-12 col-md-6 col-lg-4 w-100 ">
                             <img src="images/cardmexico.png" class="card-img-top" alt="mexico">
                             <div class="card-body">
                                 <h5 class="card-title">MEXICO TOUR</h5>
@@ -171,7 +180,7 @@
             <!-- accordeont of destination -->
             <div class="container p-5">
                 <div class="row justify-content-center ">
-                    <div class="col-md-8 col-lg-8 ">
+                    <div class="card carte ">
                         <div class="accordion accordion-flush pt-3 align-items-center gap-5 "
                             id="accordionFlushExample">
                             <div class="accordion-item ">
@@ -258,57 +267,57 @@
             </div>
         </div>
 
-            <!-- CONTACT -->
+        <!-- CONTACT -->
 
-            <h1 id="contact" class="text-center pt-5 
+        <h1 id="contact" class="text-center pt-5 
                 fst-italic mt-5">Contactez nous ... </h1>
 
-            <!-- formulaire de contact -->
-            <div class="container text-center pb-5 mt-5 ">
-                <div class="row">
-                    <!-- colonne du grid vide  -->
-                    <div class="col"></div>
-                    <!-- colonne de la grid avec le formulaire  -->
-                    <div class="col text-dark formulaire ">
-                        <form>
-                            <!-- Nom -->
-                            <div class="mb-3 mt-3">
-                                <label for="name" class="form-label">Nom</label>
-                                <input type="text" class="form-control" id="name" name="name" placeholder="Votre nom"
-                                    required>
-                            </div>
+        <!-- formulaire de contact -->
+        <div class="container text-center pb-5 mt-5 ">
+            <div class="row">
+                <!-- colonne du grid vide  -->
+                <div class="col"></div>
+                <!-- colonne de la grid avec le formulaire  -->
+                <div class="col text-dark formulaire ">
+                    <form>
+                        <!-- Nom -->
+                        <div class="mb-3 mt-3">
+                            <label for="name" class="form-label">Nom</label>
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Votre nom"
+                                required>
+                        </div>
 
-                            <!-- Email -->
-                            <div class="mb-3">
-                                <label for="email" class="form-label">Email</label>
-                                <input type="email" class="form-control" id="email" name="email"
-                                    placeholder="nomprenom@example.com" required>
-                            </div>
-                            <!-- destination -->
-                            <div class="mb-3">
-                                <label for="destination" class="form-label">Destination</label>
-                                <select class="form-select" aria-label="Default select example">
+                        <!-- Email -->
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" name="email"
+                                placeholder="nomprenom@example.com" required>
+                        </div>
+                        <!-- destination -->
+                        <div class="mb-3">
+                            <label for="destination" class="form-label">Destination</label>
+                            <select class="form-select" aria-label="Default select example">
 
-                                    <option selected>choisissez une destination </option>
-                                    <option value="1">Italia</option>
-                                    <option value="2">Japan</option>
-                                    <option value="3">Mexico</option>
-                                </select>
+                                <option selected>choisissez une destination </option>
+                                <option value="1">Italia</option>
+                                <option value="2">Japan</option>
+                                <option value="3">Mexico</option>
+                            </select>
 
-                            </div>
-                            <!-- Message -->
-                            <div class="mb-3">
-                                <label for="message" class="form-label">Message</label>
-                                <textarea class="form-control" id="message" name="message" rows="4"
-                                    placeholder="Votre message..." required></textarea>
-                            </div>
+                        </div>
+                        <!-- Message -->
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" name="message" rows="4"
+                                placeholder="Votre message..." required></textarea>
+                        </div>
 
-                            <!-- Bouton -->
-                            <button type="submit" class="btn btn-primary mb-3">Envoyer</button>
-                        </form>
-                    </div>
-                    <!-- colonne du grid vide  -->
-                    <div class="col"></div>
+                        <!-- Bouton -->
+                        <button type="submit" class="btn btn-primary mb-3">Envoyer</button>
+                    </form>
+                </div>
+                <!-- colonne du grid vide  -->
+                <div class="col"></div>
 
     </main>
     <!-- footer du site -->
@@ -320,6 +329,24 @@
                 Site conçu pour une démonstration d'un projet avec bootstrap. Mentions légales et politique de
                 confidentialité non disponibles.
             </p>
+        </div>
+        <div id="socialnetwork">
+            <span>
+                <a href="https://www.facebook.com/sofiane.touat">
+                    <img src="images/Facebook_logo_(square).png" alt="Facebook Logo"></a>
+            </span>
+            <span>
+                <a href="https://www.instagram.com/touat_sofiane_fennekage">
+                    <img src="images/Instagram_icon.png" alt="instagram logo"></a>
+            </span>
+            <span>
+                <a href="https://soundcloud.com/sofiane-touat-646795729">
+                    <img src="images/soundcloudlogo.png" alt="soundcloud logo"></a>
+            </span>
+            <span>
+                <a href="https://www.youtube.com/@TheFennekage">
+                    <img src="images/Youtube_logo.png" alt="logo youtube"></a>
+            </span>
         </div>
     </footer>
 

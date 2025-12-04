@@ -1,45 +1,90 @@
-body{
-    background-color: bisque;
+body {
+  background-color: bisque;
 }
 
 .text-japan {
-    color:rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
 }
 .text-italia {
-    color:rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
 }
 
 .text-cream {
-  color:rgb(0, 0, 0);
-   }
-   
- @font-face {
-    font-family: "EBGaramond";
-    src: url("font/EB_Garamond");  
-} 
+  color: rgb(0, 0, 0);
+}
 
- /* text des cartes */
+@font-face {
+  font-family: "EBGaramond";
+  src: url("font/EB_Garamond");
+
+}
+/* image hero section */
+.imagehero {
+  height: 40%;
+  width: 40%;
+}
+/* carousel item  */
+
+
+/* dimension des cartes */
+
+.carte {
  
- .carte {
-    width: 280px;
- }
- /* texte des cartes descriptif */
- .carte-description{
-    font-family: ebgaramond;
-    font-size: 18px;
-    height: 250px;
- }
- .formulaire {
-    background-color: rgba(0, 0, 0, 0.026);
-    border-radius: 10px;
- }
+
+ height: auto;
+}
+/* texte des cartes descriptif */
+.carte-description {
+  font-family: ebgaramond;
+  font-size: 18px;
+  
+}
+/* Style du conteneur du formulaire */
+.formulaire {
+  background-color: rgba(0, 0, 0, 0.026);
+  border-radius: 10px;
+}
+.carousitem {
+  height: 800px;
+  position: relative;
+  height: 50vh;
+}
+.caroustext {
+  background-color: rgba(197, 198, 177, 0.509);
 
 
- @media screen and (max-width: 576px){
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;        /* centre verticalement ET horizontalement */
+  height: fit-content; /* ou une hauteur fixe */
+  width: fit-content;  /* ou une largeur fixe */
+}
+/*  */
+@media screen and (max-width: 576px) {
+  .carousitem {
+    
+  }
+.carte {
+    width: 50%;
+    margin: 10px auto;
+  }
 
-    .
-    .carte{
-        width:50%;
-        margin :10px auto;
-    }
- } 
+}
+#socialnetwork {
+  text-align: center;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  color: gray;
+  list-style: none;
+  gap: 20px;
+  font-size: 20px;
+  font-family: fantasy;
+  img {
+    width: 30px;
+    height: 30px;
+  }
+}
