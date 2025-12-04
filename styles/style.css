@@ -1,7 +1,9 @@
+/* style du Body */
+
 body {
   background-color: bisque;
 }
-
+/* style du japan */
 .text-japan {
   color: rgb(0, 0, 0);
 }
@@ -11,8 +13,8 @@ body {
 
 .text-cream {
   color: rgb(0, 0, 0);
-}
-
+}  
+/* style de la font face*/
 @font-face {
   font-family: "EBGaramond";
   src: url("font/EB_Garamond");
@@ -28,11 +30,11 @@ body {
 
 /* dimension des cartes */
 
-.carte {
+/* .carte {
  
 
  height: auto;
-}
+} */
 /* texte des cartes descriptif */
 .carte-description {
   font-family: ebgaramond;
@@ -44,15 +46,15 @@ body {
   background-color: rgba(0, 0, 0, 0.026);
   border-radius: 10px;
 }
+/* dimension des item du caroussel */
 .carousitem {
   height: 800px;
   position: relative;
   height: 50vh;
 }
+/* style du text du caroussel */
 .caroustext {
   background-color: rgba(197, 198, 177, 0.509);
-
-
   position: absolute;
   top: 0;
   bottom: 0;
@@ -64,15 +66,14 @@ body {
 }
 /*  */
 @media screen and (max-width: 576px) {
-  .carousitem {
-    
-  }
+ 
 .carte {
     width: 50%;
     margin: 10px auto;
   }
 
 }
+/* style de la socialnetwork zone */
 #socialnetwork {
   text-align: center;
   padding: 10px;
